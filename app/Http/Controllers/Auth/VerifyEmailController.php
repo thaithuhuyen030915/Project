@@ -13,7 +13,7 @@ class VerifyEmailController extends Controller
     /**
      * Show user's email address as verified.
      *
-     * @return \Illuminate\View\View
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\View\View
      */
     public function success()
     {

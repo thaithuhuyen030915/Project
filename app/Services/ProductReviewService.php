@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
-class ProductReviewService 
+class ProductReviewService
 {
     /**
      * @var ProductReviewRepository
@@ -27,8 +27,8 @@ class ProductReviewService
     {
         $this->productReviewReprository = $productReviewReprository;
     }
-    
-    /** 
+
+    /**
      * store the admin in the database.
      * @param App\Http\Requests\Admin\StoreCategoryRequest $request
      * @return Illuminate\Http\RedirectResponse
@@ -37,7 +37,7 @@ class ProductReviewService
     {
         try {
             $data = $request->validated();
-            if ($this->checkProductReview($product)){
+            if (!$this->checkProductReview($product)){
                 return back()->with('error', "Đánh giá thất bại vui lòng thử lại");
             }
             $data['user_id'] = Auth::user()->id;
@@ -67,7 +67,7 @@ class ProductReviewService
         return true;
     }
 
-     /** 
+     /**
      * delete the user in the database.
      * @param Illuminate\Http\Request; $request
      * @return \Illuminate\Http\JsonResponse
