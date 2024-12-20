@@ -4,7 +4,7 @@
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="shortcut icon" href="{{ asset('asset/client/images/favicon.png') }}">
+      <link rel="shortcut icon" href="{{ asset('asset/client/images/favicons/favicon-16x16.png') }}">
       <title>{{ setting_website()->name }}</title>
       <link href="{{ asset('asset/client/css/bootstrap.css') }}" rel="stylesheet">
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,100italic,100' rel='stylesheet' type='text/css'>
@@ -21,7 +21,7 @@
           margin: unset;
           height: 260px;
       }
-  
+
       .thumbnail img{
           height: 100% !important;
           width: 100% !important;

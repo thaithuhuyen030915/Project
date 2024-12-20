@@ -8,43 +8,37 @@
             <div class="sequence-next"><i class="fa fa-angle-right"></i></div>
             <ul class="sequence-canvas">
                 <li class="animate-in">
-                    <div class="flat-caption caption2 formLeft delay400 text-center">
-                        <h1>FLAT SHOP</h1>
-                    </div>
                     <div class="flat-caption caption3 formLeft delay500 text-center">
-                        <p>Chào mừng đến với shop thời trang của chúng tôi - nơi cung cấp các sản phẩm đa dạng và chất lượng cao. Đến với chúng tôi để tìm kiếm phong cách của bạn!</p>
-                        <p>Phong cách của bạn là niềm đam mê của chúng tôi - Hãy để chúng tôi giúp bạn thể hiện nó</p>
+                        <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-01.png') }}" alt=""></div>
                     </div>
-                    <div class="flat-image formBottom delay200" data-duration="5" data-bottom="true"><img src="{{ asset('asset/client/images/slider-image-01.png') }}" alt=""></div>
+                    <div class="flat-image formBottom delay200" data-duration="5" data-bottom="true"><img src="" alt=""></div>
                 </li>
                 <li>
-                    <div class="flat-caption caption2 formLeft delay400 text-center">
-                        <h1>FLAT SHOP</h1>
+                    <div class="flat-caption caption2 formLeft delay200 text-center">
                     </div>
-                    <div class="flat-caption caption3 formLeft delay500 text-center">
-                        <p>Chào mừng đến với shop thời trang của chúng tôi - nơi cung cấp các sản phẩm đa dạng và chất lượng cao. Đến với chúng tôi để tìm kiếm phong cách của bạn!</p>
-                        <p>Phong cách của bạn là niềm đam mê của chúng tôi - Hãy để chúng tôi giúp bạn thể hiện nó</p>
+                    <div class="flat-caption caption3 formLeft delay900 text-center">
+                        <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-02.png') }}" alt=""></div>
                     </div>
-                    <div class="flat-image formBottom delay200" data-bottom="true"><img src="{{ asset('asset/client/images/slider-image-03.png') }}" alt=""></div>
+                    <div class="flat-image formBottom delay200" data-bottom="true"><img src="" alt=""></div>
                 </li>
             </ul>
         </div>
     </div>
-    {{-- <div class="promotion-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-01.png') }}" alt=""></div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-02.png') }}" alt=""></div>
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                    <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-03.png') }}" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
+{{--     <div class="promotion-banner">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-md-4 col-sm-4 col-xs-4">--}}
+{{--                    <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-01.png') }}" alt=""></div>--}}
+{{--                </div>--}}
+{{--                <div class="col-md-4 col-sm-4 col-xs-4">--}}
+{{--                    <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-02.png') }}" alt=""></div>--}}
+{{--                </div>--}}
+{{--                <div class="col-md-4 col-sm-4 col-xs-4">--}}
+{{--                    <div class="promo-box"><img src="{{ asset('asset/client/images/promotion-03.png') }}" alt=""></div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </div>
 <div class="clearfix"></div>
 <div class="container_fullwidth">
