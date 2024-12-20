@@ -71,7 +71,7 @@
     "isEntry": true
   },
   "resources/client/js/checkout.js": {
-    "file": "assets/checkout.466a47ba.js",
+    "file": "assets/checkout.b33f7f85.js",
     "src": "resources/client/js/checkout.js",
     "isEntry": true
   },
@@ -127,9 +127,9 @@
     "src": "resources/common/css/loading.css",
     "isEntry": true
   },
-  "resources/client/css/home.css": {
-    "file": "assets/home.0f99b365.css",
-    "src": "resources/client/css/home.css",
+  "resources/client/css/product-detail.css": {
+    "file": "assets/product-detail.165a70a3.css",
+    "src": "resources/client/css/product-detail.css",
     "isEntry": true
   },
   "resources/admin/css/form-edit.css": {
@@ -137,24 +137,9 @@
     "src": "resources/admin/css/form-edit.css",
     "isEntry": true
   },
-  "resources/admin/css/product.css": {
-    "file": "assets/product.09323e57.css",
-    "src": "resources/admin/css/product.css",
-    "isEntry": true
-  },
-  "resources/client/css/auth.css": {
-    "file": "assets/auth.0f4b1f31.css",
-    "src": "resources/client/css/auth.css",
-    "isEntry": true
-  },
-  "resources/client/css/product-detail.css": {
-    "file": "assets/product-detail.165a70a3.css",
-    "src": "resources/client/css/product-detail.css",
-    "isEntry": true
-  },
-  "resources/common/css/form.css": {
-    "file": "assets/form.71cf2f43.css",
-    "src": "resources/common/css/form.css",
+  "resources/client/css/cart.css": {
+    "file": "assets/cart.f9780f10.css",
+    "src": "resources/client/css/cart.css",
     "isEntry": true
   },
   "resources/client/css/search.css": {
@@ -167,14 +152,29 @@
     "src": "resources/client/css/product-review.css",
     "isEntry": true
   },
+  "resources/common/css/form.css": {
+    "file": "assets/form.71cf2f43.css",
+    "src": "resources/common/css/form.css",
+    "isEntry": true
+  },
   "resources/client/css/checkout.css": {
     "file": "assets/checkout.9fcacbf2.css",
     "src": "resources/client/css/checkout.css",
     "isEntry": true
   },
-  "resources/client/css/cart.css": {
-    "file": "assets/cart.f9780f10.css",
-    "src": "resources/client/css/cart.css",
+  "resources/admin/css/product.css": {
+    "file": "assets/product.09323e57.css",
+    "src": "resources/admin/css/product.css",
+    "isEntry": true
+  },
+  "resources/client/css/home.css": {
+    "file": "assets/home.0f99b365.css",
+    "src": "resources/client/css/home.css",
+    "isEntry": true
+  },
+  "resources/client/css/auth.css": {
+    "file": "assets/auth.0f4b1f31.css",
+    "src": "resources/client/css/auth.css",
     "isEntry": true
   }
 }

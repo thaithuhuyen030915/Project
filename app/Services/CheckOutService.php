@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 
-class CheckOutService 
+class CheckOutService
 {
     /**
      * @var OrderRepository
@@ -135,7 +135,7 @@ class CheckOutService
         }
     }
 
-    public function paymentMomo() 
+    public function paymentMomo()
     {
         $orderId = time() . mt_rand(111, 999)."";
         $amount = \Cart::getTotal() + $this->getTransportFee()."";
@@ -156,10 +156,10 @@ class CheckOutService
             "from_district" => $fromDistrict,
             "to_district" => $toDistrict,
         ]);
-        $serviceId = $response['data'][0]['service_id'];
-        
+        $serviceId = $response['data'][0]['service_type_id'];
+
         $dataGetFee = [
-            "service_id" => $serviceId,
+            "service_type_id" => $serviceId,
             "insurance_value" => 500000,
             "coupon" => null,
             "from_district_id" => $fromDistrict,
@@ -204,7 +204,7 @@ class CheckOutService
                 }
                 DB::commit();
                 \Cart::clear();
-                
+
                 return redirect()->route('order_history.index');
             }
 
@@ -243,32 +243,32 @@ class CheckOutService
         $message = $request->message;
         $localMessage = $request->localMessage;
         $responseTime = $request->responseTime;
-        $errorCode = $request->errorCode;   
+        $errorCode = $request->errorCode;
         $payType = $request->payType;
         $extraData = $request->extraData;
         $secretKey = env('MOMO_SECRET_KEY');
         $extraData = "";
 
         $rawHash = "partnerCode=" . $partnerCode .
-            "&accessKey=" . $accessKey . 
-            "&requestId=" . $requestId . 
-            "&amount=" . $amount . 
-            "&orderId=" . $orderId . 
-            "&orderInfo=" . $orderInfo . 
+            "&accessKey=" . $accessKey .
+            "&requestId=" . $requestId .
+            "&amount=" . $amount .
+            "&orderId=" . $orderId .
+            "&orderInfo=" . $orderInfo .
             "&orderType=" . $orderType .
-            "&transId=" . $transId. 
+            "&transId=" . $transId.
             "&message=" . $message .
             "&localMessage=" . $localMessage.
             "&responseTime=" . $responseTime.
-            "&errorCode=" . $errorCode. 
-            "&payType=" . $payType. 
+            "&errorCode=" . $errorCode.
+            "&payType=" . $payType.
             "&extraData=" . $extraData;
         $signature = hash_hmac("sha256", $rawHash, $secretKey);
-        
+
         if (hash_equals($signature, $request->signature)) {
             return true;
         }
-        
+
         return false;
     }
 
@@ -283,15 +283,15 @@ class CheckOutService
         $extraData = "";
         $requestId = time().mt_rand(111, 999)."";
         $requestType = "captureWallet";
-        $rawHash = "accessKey=" . $accessKey . 
-            "&amount=" . $amount . 
-            "&extraData=" . $extraData . 
-            "&ipnUrl=" . $ipnUrl . 
-            "&orderId=" . $orderId . 
-            "&orderInfo=" . $orderInfo . 
-            "&partnerCode=" . $partnerCode . 
-            "&redirectUrl=" . $redirectUrl . 
-            "&requestId=" . $requestId . 
+        $rawHash = "accessKey=" . $accessKey .
+            "&amount=" . $amount .
+            "&extraData=" . $extraData .
+            "&ipnUrl=" . $ipnUrl .
+            "&orderId=" . $orderId .
+            "&orderInfo=" . $orderInfo .
+            "&partnerCode=" . $partnerCode .
+            "&redirectUrl=" . $redirectUrl .
+            "&requestId=" . $requestId .
             "&requestType=" . $requestType;
         $signature = hash_hmac("sha256", $rawHash, $serectkey);
         $data = array('partnerCode' => $partnerCode,
@@ -307,12 +307,12 @@ class CheckOutService
         'extraData' => $extraData,
         'requestType' => $requestType,
         'signature' => $signature);
-        
+
         $result = Http::acceptJson([
             'application/json'
         ])->post($endPoint, $data);
 
-        $jsonResult = json_decode($result->body(), true); 
+        $jsonResult = json_decode($result->body(), true);
         return redirect($jsonResult['payUrl']);
     }
 
@@ -364,7 +364,7 @@ class CheckOutService
 
         $vnp_Url = $vnp_Url . "?" . $query;
         if (isset($vnp_HashSecret)) {
-            $vnpSecureHash =   hash_hmac('sha512', $hashdata, $vnp_HashSecret);//  
+            $vnpSecureHash =   hash_hmac('sha512', $hashdata, $vnp_HashSecret);//
             $vnp_Url .= 'vnp_SecureHash=' . $vnpSecureHash;
         }
         return redirect($vnp_Url);

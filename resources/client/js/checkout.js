@@ -47,7 +47,7 @@ function getWard()
         type: 'GET',
         url: 'https://online-gateway.ghn.vn/shiip/public-api/master-data/ward',
         data: {
-            district_id : district_id 
+            district_id : district_id
         }
     }).done((respones) => {
         let option = '';
@@ -75,11 +75,11 @@ function getFee()
         }
     }).done((respones) => {
         let from_district = "1530";
-        let service_type = respones.data[0].service_id;
+        let service_type = respones.data[0].service_type_id;
         let to_district_id = $('#district').val();
         let to_ward_code = $('#ward').val();
         let data = {
-            service_id: service_type,
+            service_type_id: service_type,
             insurance_value: 500000,
             coupon: null,
             from_district_id: from_district,
