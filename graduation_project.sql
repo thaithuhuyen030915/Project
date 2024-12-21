@@ -1,16 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th9 25, 2023 lúc 03:27 PM
--- Phiên bản máy phục vụ: 10.4.27-MariaDB
--- Phiên bản PHP: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -18,7 +9,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `graduation_project`
+-- Cơ sở dữ liệu: `php_project`
 --
 
 -- --------------------------------------------------------
@@ -44,13 +35,7 @@ CREATE TABLE `addresses` (
 --
 
 INSERT INTO `addresses` (`id`, `user_id`, `city`, `district`, `ward`, `apartment_number`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 2, '203', '1527', '40202', '130 Điện Biên Phủ', '2023-05-02 03:24:48', '2023-05-02 03:24:48', NULL),
-(2, 3, '203', '1527', '40210', '120 Phạm Như Xương', '2023-05-03 10:11:19', '2023-05-03 10:11:19', NULL),
-(3, 1, '203', '1527', '40202', '130 Điện Biên Phủ', '2023-05-02 03:24:48', '2023-05-02 03:24:48', NULL),
-(8, 9, '269', '2264', '90816', '105, Hữu Phước', '2023-05-04 01:10:44', '2023-05-04 01:10:44', NULL),
-(9, 10, '269', '2264', '90816', '105, Hữu Phước', '2023-09-21 12:47:49', '2023-09-21 12:47:49', NULL),
-(10, 11, '269', '2264', '90816', '222222', '2023-09-21 13:39:31', '2023-09-21 13:39:31', NULL);
-
+(3, 1, '203', '1527', '40202', '130 Điện Biên Phủ', '2023-05-02 03:24:48', '2023-05-02 03:24:48', NULL);
 -- --------------------------------------------------------
 
 --
@@ -97,21 +82,26 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`, `parent_id`, `slug`) VALUES
-(1, 'Thời Trang Nam', NULL, NULL, NULL, 0, 'thoi-trang-nam'),
-(2, 'Thời Trang Nữ', NULL, NULL, NULL, 0, 'thoi-trang-nu'),
-(3, 'Áo polo', NULL, '2023-09-25 13:25:16', NULL, 1, 'ao-polo'),
+(1, 'Thời Trang Dành Cho Nam', NULL, NULL, NULL, 0, 'thoi-trang-nam'),
+(2, 'Thời Trang Dành Cho Nữ', NULL, NULL, NULL, 0, 'thoi-trang-nu'),
+(3, 'Áo polo', NULL, NULL, NULL, 1, 'ao-polo'),
 (4, 'Áo thể thao', NULL, NULL, NULL, 1, 'ao-the-thao'),
-(5, 'Áo Sơ Mi', NULL, NULL, NULL, 1, 'ao-so-mi'),
-(6, 'Áo Thun', NULL, NULL, NULL, 1, 'ao-thun'),
-(7, 'Quần Jeans', NULL, NULL, NULL, 1, 'quan-jeans'),
-(8, 'Quần Shorts', NULL, NULL, NULL, 1, 'quan-shorts'),
-(9, 'Áo Thun', NULL, NULL, NULL, 2, 'ao-thun-1'),
-(10, 'Đầm Váy', NULL, NULL, NULL, 2, 'dam-vay'),
-(11, 'Áo Sơ Mi', NULL, NULL, NULL, 2, 'ao-so-mi-1'),
-(12, 'Chân Váy', NULL, NULL, NULL, 2, 'chan-vay'),
-(13, 'Quần Jeans', NULL, NULL, NULL, 2, 'quan-jeans-1'),
-(14, 'Lê Hữu Phước', '2023-09-25 13:25:03', '2023-09-25 13:25:10', '2023-09-25 13:25:10', 1, 'le-huu-phuoc');
-
+(5, 'Áo sơ mi', NULL, NULL, NULL, 1, 'ao-so-mi'),
+(6, 'Áo thun', NULL, NULL, NULL, 1, 'ao-thun'),
+(7, 'Quần jeans', NULL, NULL, NULL, 1, 'quan-jeans'),
+(8, 'Quần shorts', NULL, NULL, NULL, 1, 'quan-shorts'),
+(9, 'Áo thun', NULL, NULL, NULL, 2, 'ao-thun-1'),
+(10, 'Đầm váy', NULL, NULL, NULL, 2, 'dam-vay'),
+(11, 'Áo sơ mi', NULL, NULL, NULL, 2, 'ao-so-mi-1'),
+(12, 'Chân váy', NULL, NULL, NULL, 2, 'chan-vay'),
+(13, 'Quần jeans', NULL, NULL, NULL, 2, 'quan-jeans-1'),
+(14, 'Quần kaki', NULL, NULL, NULL, 1, 'quan-kaki'),
+(15, 'Quần tây', NULL, NULL, NULL, 1, 'quan-tay'),
+(16, 'Quần shorts', NULL, NULL, NULL, 2, 'quan-shorts-1'),
+(17, 'Áo khoác', NULL, NULL, NULL, 2, 'ao-khoac-1'),
+(18, 'Áo khoác', NULL, NULL, NULL, 1, 'ao-khoac'),
+(19, 'Quần tây', NULL, NULL, NULL, 1, 'quan-tay-1'),
+(20, 'Quần kaki', NULL, NULL, NULL, 1, 'quan-kaki');
 -- --------------------------------------------------------
 
 --
@@ -133,12 +123,21 @@ CREATE TABLE `colors` (
 INSERT INTO `colors` (`id`, `name`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Trắng', NULL, NULL, NULL),
 (2, 'Đen', NULL, NULL, NULL),
-(3, 'Xám', NULL, NULL, NULL),
+(3, 'Ghi', NULL, NULL, NULL),
 (4, 'Đỏ', NULL, NULL, NULL),
 (5, 'Vàng', NULL, NULL, NULL),
 (6, 'Xanh', NULL, NULL, NULL),
 (7, 'Tím', NULL, NULL, NULL),
-(8, 'XANH NHAT', '2023-09-21 13:34:31', '2023-09-21 13:34:31', NULL);
+(8, 'Be', NULL, NULL, NULL),
+(9, 'Nâu', NULL, NULL, NULL),
+(10, 'Navy', NULL, NULL, NULL),
+(11, 'Rêu', NULL, NULL, NULL),  
+(12, 'Hồng', NULL, NULL, NULL),
+(13, 'Kem', NULL, NULL, NULL),
+(14, 'Cam', NULL, NULL, NULL);
+
+
+
 
 -- --------------------------------------------------------
 
@@ -157,39 +156,39 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(2, '2023_02_06_054552_create_roles_table', 1),
-(3, '2023_02_06_093103_create_users_table', 1),
-(4, '2023_02_06_093104_create_addresses_table', 1),
-(5, '2023_02_09_141232_create_user_verifies_table', 1),
-(6, '2023_02_17_101710_create_brands_table', 1),
-(7, '2023_03_13_104142_create_colors_table', 1),
-(8, '2023_03_13_104200_create_sizes_table', 1),
-(9, '2023_03_15_111222_create_categories_table', 1),
-(10, '2023_03_16_130121_create_products_table', 1),
-(11, '2023_03_16_140642_create_products_color_table', 1),
-(12, '2023_03_16_140906_create_products_size_table', 1),
-(13, '2023_03_23_091419_create_payments_table', 1),
-(14, '2023_03_23_095605_create_orders_table', 1),
-(15, '2023_03_27_001440_create_order_details_table', 1),
-(16, '2023_03_28_004112_alert_orders_table', 1),
-(17, '2023_03_28_004113_alert_orders_table', 1),
-(18, '2023_03_28_143413_alert_products_size_table', 1),
-(19, '2023_03_28_144341_alert_products_color_table', 1),
-(20, '2023_03_28_144345_alert_products_table', 1),
-(21, '2023_03_28_144347_alert_orders_table', 1),
-(22, '2023_03_28_144348_create_trigger_validate_quantity', 1),
-(23, '2023_03_28_144349_create_trigger_group_by_quantity', 1),
-(24, '2023_04_11_111222_alter_categories_table', 1),
-(25, '2023_04_11_111223_alter_categories_table', 1),
-(26, '2023_04_13_114627_create_product_reviews_table', 1),
-(27, '2023_04_17_180428_drop_personal_access_tokens_table', 1),
-(28, '2023_04_13_114628_alter_products_size_table ', 2),
-(29, '2023_04_30_114628_alter_product_table ', 3),
-(30, '2023_04_18_180428_create_setting_table', 4),
-(31, '2023_04_19_180428_alter_setting_table', 4),
-(32, '2023_03_28_144348_create_reduce_quantity_product_trigger', 5),
-(33, '2023_05_1_114628_alter_payments_table ', 5);
+(1, '2024_12_14_000001_create_personal_access_tokens_table', 1),
+(2, '2024_12_06_054552_create_roles_table', 1),
+(3, '2024_12_06_093103_create_users_table', 1),
+(4, '2024_12_06_093104_create_addresses_table', 1),
+(5, '2024_12_09_141232_create_user_verifies_table', 1),
+(6, '2024_12_14_101710_create_brands_table', 1),
+(7, '2024_12_13_104142_create_colors_table', 1),
+(8, '2024_12_13_104200_create_sizes_table', 1),
+(9, '2024_12_15_111222_create_categories_table', 1),
+(10, '2024_12_16_130121_create_products_table', 1),
+(11, '2024_12_16_140642_create_products_color_table', 1),
+(12, '2024_12_16_140906_create_products_size_table', 1),
+(13, '2024_12_14_091419_create_payments_table', 1),
+(14, '2024_12_14_095605_create_orders_table', 1),
+(15, '2024_12_14_001440_create_order_details_table', 1),
+(16, '2024_12_14_004112_alert_orders_table', 1),
+(17, '2024_12_14_004113_alert_orders_table', 1),
+(18, '2024_12_14_143413_alert_products_size_table', 1),
+(19, '2024_12_14_144341_alert_products_color_table', 1),
+(20, '2024_12_14_144345_alert_products_table', 1),
+(21, '2024_12_14_144347_alert_orders_table', 1),
+(22, '2024_12_14_144348_create_trigger_validate_quantity', 1),
+(23, '2024_12_14_144349_create_trigger_group_by_quantity', 1),
+(24, '2024_12_11_111222_alter_categories_table', 1),
+(25, '2024_12_11_111223_alter_categories_table', 1),
+(26, '2024_12_13_114627_create_product_reviews_table', 1),
+(27, '2024_12_14_180428_drop_personal_access_tokens_table', 1),
+(28, '2024_12_13_114628_alter_products_size_table ', 2),
+(29, '2024_12_14_114628_alter_product_table ', 3),
+(30, '2024_12_14_180428_create_setting_table', 4),
+(31, '2024_12_14_180428_alter_setting_table', 4),
+(32, '2024_12_14_144348_create_reduce_quantity_product_trigger', 5),
+(33, '2024_12_14_114628_alter_payments_table ', 5);
 
 -- --------------------------------------------------------
 
