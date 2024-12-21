@@ -1197,7 +1197,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `email_verified_at`, `phone_number`, `role_id`, `active`, `disable_reason`, `created_by`, `updated_by`, `deleted_by`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'Admin', 'admin@gmail.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '2024-12-28 04:29:18', '0000000000', 1, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
-(2, 'Ho Anh Nguyen', 'han16052001@gmail.com', '$2y$10$Q8XcfyypiOp348/xjPVxLOVpuC00zJLgF4D5LXMLF68ymKCa.6Ho.', '2024-12-02 03:25:18', '1234567890', 3, 1, NULL, NULL, NULL, NULL, NULL, '2024-12-02 03:24:23', '2024-12-02 03:25:18', NULL),
+(2, 'Nguyễn Văn B', 'han16052001@gmail.com', '$2y$10$Q8XcfyypiOp348/xjPVxLOVpuC00zJLgF4D5LXMLF68ymKCa.6Ho.', '2024-12-02 03:25:18', '1234567890', 3, 1, NULL, NULL, NULL, NULL, NULL, '2024-12-02 03:24:23', '2024-12-02 03:25:18', NULL),
 (3, 'Nguyễn Trần Gia Bảo 1', 'bao123@gmail.com', '$2y$10$X2oo0TcQ1rSxRdJwFFLRCuTRD2Q/KUY4gwOa/heJtYPdMwriWe72e', '2024-12-18 10:11:58', '845 642-4326', 2, 1, NULL, 1, 1, NULL, NULL, '2024-12-03 10:11:06', '2024-12-03 15:56:08', NULL),
 (9, 'Trần Văn A', 'huuphuocit0201@gmail.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '2024-12-04 01:10:50', '0845151117', 3, 1, NULL, NULL, NULL, NULL, NULL, '2024-12-04 01:10:39', '2024-12-04 01:10:50', NULL),
 (10, 'Trần Văn A', 'lehuuphuocit0201@gmail.com', '$2y$10$ahO52/FEOOecsWvnpcI9fO3Heu3kMNnyiIe5Pd4T9NdMh36Qsy7W.', '2024-12-21 12:55:34', '0845151117', 3, 1, NULL, NULL, NULL, NULL, NULL, '2024-12-21 12:47:43', '2024-12-21 12:55:34', NULL),
