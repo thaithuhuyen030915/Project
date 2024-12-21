@@ -1089,36 +1089,59 @@ INSERT INTO `setting` (`id`, `logo`, `name`, `email`, `address`, `phone_number`,
  '75 Phố Huế, Quận Hoàn Kiếm, Hà Nội', 
  '0399 233 005', 
  2, 
- '<b>WEBSITE tạm thời bảo trì để nâng cấp, xin quý khách quay lại sau.</b>', 
- '<div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
-   <h2 style="text-align: center; color: #FF5733;">🌟 VỀ CHÚNG TÔI - RITZ 🌟</h2>
-   <h3 style="color: #C70039; margin-bottom: 10px;">Lịch Sử Hình Thành Và Phát Triển:</h3>
-   <p>Ritz được thành lập vào năm <strong>2013</strong> với tầm nhìn trở thành thương hiệu thời trang tiên phong, mang đến những sản phẩm chất lượng và phong cách vượt trội. Bắt đầu từ một cửa hàng nhỏ, Ritz đã nhanh chóng phát triển và xây dựng lòng tin từ khách hàng nhờ sự cam kết về chất lượng và dịch vụ. Trải qua hơn một thập kỷ, Ritz đã mở rộng mạng lưới kinh doanh, không chỉ ở các thành phố lớn tại Việt Nam mà còn định hướng phát triển ra thị trường quốc tế.</p>
-   <h3 style="color: #C70039; margin-bottom: 10px;">📌 Cột Mốc Đáng Nhớ:</h3>
-   <ul style="list-style: circle; padding-left: 20px;">
-     <li><strong>2015</strong>: Mở cửa hàng thứ 10 tại Hà Nội, đánh dấu sự phát triển bền vững.</li>
-     <li><strong>2018</strong>: Ra mắt bộ sưu tập <em>"Minimalist"</em>, được yêu thích bởi thiết kế tinh tế, tối giản.</li>
-     <li><strong>2020</strong>: Triển khai website thương mại điện tử, mang đến trải nghiệm mua sắm hiện đại.</li>
-     <li><strong>2023</strong>: Đạt mốc 1 triệu sản phẩm được bán ra, khẳng định vị thế trên thị trường.</li>
-   </ul>
-   <h3 style="color: #C70039; margin-bottom: 10px;">🌟 Sứ Mệnh Và Tầm Nhìn:</h3>
-   <p>Ritz là người bạn đồng hành giúp khách hàng thể hiện phong cách cá nhân một cách <em>tự tin</em> và <em>độc đáo</em>. Chúng tôi luôn dẫn đầu trong việc tạo ra các xu hướng thời trang mới, mang lại giá trị vượt thời gian.</p>
-   <h3 style="color: #C70039; margin-bottom: 10px;">🛍️ Các Dòng Sản Phẩm:</h3>
-   <ul style="list-style: square; padding-left: 20px;">
-     <li><strong>Áo thun</strong>: Chất liệu mềm mại, thoáng mát, phù hợp phong cách thường ngày.</li>
-     <li><strong>Áo sơ mi</strong>: Lịch lãm, lý tưởng cho công sở và sự kiện quan trọng.</li>
-     <li><strong>Áo polo</strong>: Kết hợp giữa vẻ đẹp cổ điển và năng động.</li>
-     <li><strong>Phụ kiện thời trang</strong>: Giúp tạo điểm nhấn hoàn hảo cho phong cách cá nhân.</li>
-   </ul>
-   <h3 style="color: #C70039; margin-bottom: 10px;">🔖 Chất Lượng Là Cam Kết Hàng Đầu:</h3>
-   <p>Sản phẩm của chúng tôi được làm từ chất liệu cao cấp, đảm bảo độ bền đẹp. Quy trình kiểm tra chất lượng nghiêm ngặt là lời hứa cho sự hài lòng của khách hàng.</p>
-   <h3 style="color: #C70039; margin-bottom: 10px;">🌿 Phát Triển Bền Vững:</h3>
-   <p>Ritz cam kết bảo vệ môi trường bằng cách sử dụng nguyên liệu tái chế và áp dụng công nghệ sản xuất tiết kiệm năng lượng. Chúng tôi cũng tổ chức các chương trình xã hội để lan tỏa giá trị tốt đẹp.</p>
-   <h3 style="color: #C70039; margin-bottom: 10px;">💌 Lời Cảm Ơn:</h3>
-   <p>Chúng tôi luôn biết ơn sự ủng hộ của quý khách hàng. Hãy cùng Ritz tạo nên phong cách riêng của bạn ngay hôm nay!</p>
- </div>', 
+ 'WEBSITE tạm thời bảo trì để nâng cấp, xin quý khách quay lại sau.', 
+ '<div style="font-family: \'Roboto\', sans-serif; color: #ffffff; line-height: 1.8; background-color: #ff7043;">
+       <div style="text-align: center; margin-bottom: 30px;">
+         <h1 style="font-size: 32px; font-weight: bold; color: #ffffff; text-transform: uppercase; letter-spacing: 2px;">Về Chúng Tôi - Ritz: Thương Hiệu Thời Trang Đẳng Cấp</h1>
+         <p style="font-size: 18px; color: #ffffff; font-weight: bold;">Thương Hiệu Thời Trang Đẳng Cấp</p>
+       </div>
+       <section style="margin-bottom: 40px;">
+         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Lịch Sử Hình Thành Và Phát Triển</h2>
+         <p style="font-size: 16px; color: #ffffff;">Ritz được thành lập vào năm <strong>2013</strong> với tầm nhìn trở thành thương hiệu thời trang tiên phong, mang đến những sản phẩm chất lượng và phong cách vượt trội. Bắt đầu từ một cửa hàng nhỏ, Ritz đã nhanh chóng phát triển và xây dựng lòng tin từ khách hàng nhờ sự cam kết về chất lượng và dịch vụ. Trải qua hơn một thập kỷ, Ritz đã mở rộng mạng lưới kinh doanh, không chỉ ở các thành phố lớn tại Việt Nam mà còn định hướng phát triển ra thị trường quốc tế.</p>
+         <ul style="list-style: none; padding: 0; margin-top: 20px;">
+           <li style="margin-bottom: 10px;">
+             <span style="font-weight: bold; color: #ff7043;">2015:</span> Mở cửa hàng thứ 10 tại Hà Nội, đánh dấu sự phát triển bền vững của thương hiệu.
+           </li>
+           <li style="margin-bottom: 10px;">
+             <span style="font-weight: bold; color: #ff7043;">2018:</span> Ra mắt bộ sưu tập <em>Minimalist</em> - dòng sản phẩm được khách hàng yêu thích nhờ thiết kế tinh tế, tối giản.
+           </li>
+           <li style="margin-bottom: 10px;">
+             <span style="font-weight: bold; color: #ff7043;">2020:</span> Chuyển đổi số, triển khai website thương mại điện tử, mang đến trải nghiệm mua sắm online tiện lợi và hiện đại.
+           </li>
+           <li>
+             <span style="font-weight: bold; color: #ff7043;">2023:</span> Đạt mốc 1 triệu sản phẩm được bán ra, khẳng định vị thế trong lòng khách hàng.
+           </li>
+         </ul>
+       </section>
+       <section style="margin-bottom: 40px;">
+         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Sứ Mệnh Và Tầm Nhìn</h2>
+         <p style="font-size: 16px; color: #ffffff;">Ritz không chỉ là một thương hiệu thời trang mà còn là người bạn đồng hành, giúp khách hàng thể hiện phong cách cá nhân một cách tự tin và độc đáo. Chúng tôi luôn nỗ lực để dẫn đầu trong việc tạo ra xu hướng mới, mang lại những giá trị vượt thời gian cho khách hàng.</p>
+       </section>
+       <section style="margin-bottom: 40px;">
+         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Các Dòng Sản Phẩm</h2>
+         <p style="font-size: 16px; color: #ffffff;">Ritz tự hào cung cấp đa dạng các dòng sản phẩm, bao gồm:</p>
+         <ul style="list-style: none; padding: 0; margin-top: 20px;">
+           <li style="margin-bottom: 10px;">✔️ Áo thun: Phù hợp cho phong cách thường ngày với chất liệu mềm mại, thoáng mát.</li>
+           <li style="margin-bottom: 10px;">✔️ Áo sơ mi: Thiết kế lịch lãm, phù hợp cho môi trường công sở và các sự kiện quan trọng.</li>
+           <li style="margin-bottom: 10px;">✔️ Áo polo: Sự kết hợp hoàn hảo giữa vẻ đẹp cổ điển và năng động.</li>
+           <li>✔️ Phụ kiện thời trang: Tạo điểm nhấn cho phong cách cá nhân.</li>
+         </ul>
+       </section>
+       <section style="margin-bottom: 40px;">
+         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Chất Lượng Là Cam Kết Hàng Đầu</h2>
+         <p style="font-size: 16px; color: #ffffff;">Mỗi sản phẩm của Ritz đều được sản xuất từ những chất liệu cao cấp, đảm bảo sự thoải mái và bền đẹp. Chúng tôi áp dụng quy trình kiểm tra chất lượng nghiêm ngặt để mang đến sản phẩm tốt nhất cho khách hàng.</p>
+       </section>
+       <section style="margin-bottom: 40px;">
+         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Phát Triển Bền Vững</h2>
+         <p style="font-size: 16px; color: #ffffff;">Ritz hướng đến mô hình phát triển thân thiện với môi trường bằng cách sử dụng nguyên liệu tái chế và áp dụng công nghệ sản xuất tiết kiệm năng lượng. Chúng tôi cũng tổ chức nhiều chương trình xã hội để lan tỏa giá trị tốt đẹp đến cộng đồng.</p>
+       </section>
+       <div style="text-align: center; margin-top: 40px;">
+         <p style="font-size: 16px; color: #ffffff;">Cảm ơn bạn đã đồng hành cùng chúng tôi! Hãy tạo phong cách riêng cùng Ritz ngay hôm nay.</p>
+       </div>
+     </div>', 
  NULL, 
  NULL);
+
 -- --------------------------------------------------------
 
 --
