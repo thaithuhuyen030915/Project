@@ -1,6 +1,6 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-    
+
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-white navbar-light">
         <!-- Left navbar links -->
@@ -12,7 +12,7 @@
             <a href="{{ route('user.home') }}" class="nav-link">Trang Chủ Website</a>
           </li>
         </ul>
-    
+
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -23,7 +23,7 @@
         </ul>
       </nav>
       <!-- /.navbar -->
-    
+
       <!-- Main Sidebar Container -->
       <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
@@ -34,19 +34,19 @@
             {{ (Auth::guard('admin')->user()->role_id == 1) ? 'Quản Trị' : 'Nhân Viên'}}
           </span>
         </a>
-    
+
         <!-- Sidebar -->
         <div class="sidebar">
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
-              <img src="{{ asset('asset/admin/dist/img/user2-160x160.jpg') }}" class="img-circle elevation-2" alt="User Image">
+              <img src="{{ asset('asset/admin/dist/img/avatar1.png') }}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
               <a href="javascrip:void(0)" class="d-block">{{ Auth::guard('admin')->user()->name }}</a>
             </div>
           </div>
-    
+
           <!-- Sidebar Menu -->
           <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">

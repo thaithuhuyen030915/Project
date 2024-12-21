@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Admin | {{ $title }}</title>
-  <!-- Google Font: Source Sans Pro -->
+    <link rel="shortcut icon" href="{{ asset('asset/client/images/favicons/favicon-16x16.png') }}">
+    <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ asset('asset/admin/plugins/fontawesome-free/css/all.min.css') }}">
@@ -37,8 +38,8 @@
   <script src="{{ asset('asset/admin/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
   <!-- CodeMirror -->
   <link rel="stylesheet" href="{{ asset('asset/admin/plugins/codemirror/codemirror.css') }}">
-  <link rel="stylesheet" href="{{ asset('asset/admin/plugins/codemirror/theme/monokai.css') }}">
-  <script>
+  <link rel="stylesheet" href="{{ asset('asset/admin/plugins/codemirror/theme/monokai.css') }}"><link rel="shortcut icon" href="{{ asset('asset/client/images/favicons/favicon-16x16.png') }}">
+    <script>
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
