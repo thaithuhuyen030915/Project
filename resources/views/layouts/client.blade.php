@@ -48,7 +48,7 @@
                         <div class="row">
                            <div class="col-md-6">
                               <ul class="topmenu">
-                                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                 <li><a href="https://www.facebook.com/ShopRitz?locale=vi_VN"><i class="fab fa-facebook"></i></a></li>
                                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                                  <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
                                  <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
