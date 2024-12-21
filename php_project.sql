@@ -1090,14 +1090,14 @@ INSERT INTO `setting` (`id`, `logo`, `name`, `email`, `address`, `phone_number`,
  '0399 233 005', 
  2, 
  'WEBSITE tạm thời bảo trì để nâng cấp, xin quý khách quay lại sau.', 
- '<div style="font-family: \'Roboto\', sans-serif; color: #ffffff; line-height: 1.8; background-color: #ff7043;">
+ '<div style="font-family: \'Roboto\', sans-serif; background-color: #f8f8f8; color: #333; line-height: 1.6; padding: 40px; font-size: 16px; text-align: justify;">
        <div style="text-align: center; margin-bottom: 30px;">
-         <h1 style="font-size: 32px; font-weight: bold; color: #ffffff; text-transform: uppercase; letter-spacing: 2px;">Về Chúng Tôi - Ritz: Thương Hiệu Thời Trang Đẳng Cấp</h1>
-         <p style="font-size: 18px; color: #ffffff; font-weight: bold;">Thương Hiệu Thời Trang Đẳng Cấp</p>
+         <h1 style="font-size: 32px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">Về Chúng Tôi - Ritz: Thương Hiệu Thời Trang Đẳng Cấp</h1>
+         <p style="font-size: 18px; font-weight: bold; color: #555; margin-bottom: 20px;">Thương Hiệu Thời Trang Đẳng Cấp</p>
        </div>
        <section style="margin-bottom: 40px;">
-         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Lịch Sử Hình Thành Và Phát Triển</h2>
-         <p style="font-size: 16px; color: #ffffff;">Ritz được thành lập vào năm <strong>2013</strong> với tầm nhìn trở thành thương hiệu thời trang tiên phong, mang đến những sản phẩm chất lượng và phong cách vượt trội. Bắt đầu từ một cửa hàng nhỏ, Ritz đã nhanh chóng phát triển và xây dựng lòng tin từ khách hàng nhờ sự cam kết về chất lượng và dịch vụ. Trải qua hơn một thập kỷ, Ritz đã mở rộng mạng lưới kinh doanh, không chỉ ở các thành phố lớn tại Việt Nam mà còn định hướng phát triển ra thị trường quốc tế.</p>
+         <h2 style="font-size: 24px; font-weight: bold; color: #333; border-left: 4px solid #ff7043; padding-left: 10px; margin-bottom: 20px;">Lịch Sử Hình Thành Và Phát Triển</h2>
+         <p style="font-size: 16px; color: #555;">Ritz được thành lập vào năm <strong>2013</strong> với tầm nhìn trở thành thương hiệu thời trang tiên phong, mang đến những sản phẩm chất lượng và phong cách vượt trội. Bắt đầu từ một cửa hàng nhỏ, Ritz đã nhanh chóng phát triển và xây dựng lòng tin từ khách hàng nhờ sự cam kết về chất lượng và dịch vụ. Trải qua hơn một thập kỷ, Ritz đã mở rộng mạng lưới kinh doanh, không chỉ ở các thành phố lớn tại Việt Nam mà còn định hướng phát triển ra thị trường quốc tế.</p>
          <ul style="list-style: none; padding: 0; margin-top: 20px;">
            <li style="margin-bottom: 10px;">
              <span style="font-weight: bold; color: #ff7043;">2015:</span> Mở cửa hàng thứ 10 tại Hà Nội, đánh dấu sự phát triển bền vững của thương hiệu.
@@ -1114,12 +1114,12 @@ INSERT INTO `setting` (`id`, `logo`, `name`, `email`, `address`, `phone_number`,
          </ul>
        </section>
        <section style="margin-bottom: 40px;">
-         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Sứ Mệnh Và Tầm Nhìn</h2>
-         <p style="font-size: 16px; color: #ffffff;">Ritz không chỉ là một thương hiệu thời trang mà còn là người bạn đồng hành, giúp khách hàng thể hiện phong cách cá nhân một cách tự tin và độc đáo. Chúng tôi luôn nỗ lực để dẫn đầu trong việc tạo ra xu hướng mới, mang lại những giá trị vượt thời gian cho khách hàng.</p>
+         <h2 style="font-size: 24px; font-weight: bold; color: #333; border-left: 4px solid #ff7043; padding-left: 10px; margin-bottom: 20px;">Sứ Mệnh Và Tầm Nhìn</h2>
+         <p style="font-size: 16px; color: #555;">Ritz không chỉ là một thương hiệu thời trang mà còn là người bạn đồng hành, giúp khách hàng thể hiện phong cách cá nhân một cách tự tin và độc đáo. Chúng tôi luôn nỗ lực để dẫn đầu trong việc tạo ra xu hướng mới, mang lại những giá trị vượt thời gian cho khách hàng.</p>
        </section>
        <section style="margin-bottom: 40px;">
-         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Các Dòng Sản Phẩm</h2>
-         <p style="font-size: 16px; color: #ffffff;">Ritz tự hào cung cấp đa dạng các dòng sản phẩm, bao gồm:</p>
+         <h2 style="font-size: 24px; font-weight: bold; color: #333; border-left: 4px solid #ff7043; padding-left: 10px; margin-bottom: 20px;">Các Dòng Sản Phẩm</h2>
+         <p style="font-size: 16px; color: #555;">Ritz tự hào cung cấp đa dạng các dòng sản phẩm, bao gồm:</p>
          <ul style="list-style: none; padding: 0; margin-top: 20px;">
            <li style="margin-bottom: 10px;">✔️ Áo thun: Phù hợp cho phong cách thường ngày với chất liệu mềm mại, thoáng mát.</li>
            <li style="margin-bottom: 10px;">✔️ Áo sơ mi: Thiết kế lịch lãm, phù hợp cho môi trường công sở và các sự kiện quan trọng.</li>
@@ -1128,15 +1128,15 @@ INSERT INTO `setting` (`id`, `logo`, `name`, `email`, `address`, `phone_number`,
          </ul>
        </section>
        <section style="margin-bottom: 40px;">
-         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Chất Lượng Là Cam Kết Hàng Đầu</h2>
-         <p style="font-size: 16px; color: #ffffff;">Mỗi sản phẩm của Ritz đều được sản xuất từ những chất liệu cao cấp, đảm bảo sự thoải mái và bền đẹp. Chúng tôi áp dụng quy trình kiểm tra chất lượng nghiêm ngặt để mang đến sản phẩm tốt nhất cho khách hàng.</p>
+         <h2 style="font-size: 24px; font-weight: bold; color: #333; border-left: 4px solid #ff7043; padding-left: 10px; margin-bottom: 20px;">Chất Lượng Là Cam Kết Hàng Đầu</h2>
+         <p style="font-size: 16px; color: #555;">Mỗi sản phẩm của Ritz đều được sản xuất từ những chất liệu cao cấp, đảm bảo sự thoải mái và bền đẹp. Chúng tôi áp dụng quy trình kiểm tra chất lượng nghiêm ngặt để mang đến sản phẩm tốt nhất cho khách hàng.</p>
        </section>
        <section style="margin-bottom: 40px;">
-         <h2 style="font-size: 24px; font-weight: bold; color: #ffffff; border-left: 4px solid #ffffff; padding-left: 10px;">Phát Triển Bền Vững</h2>
-         <p style="font-size: 16px; color: #ffffff;">Ritz hướng đến mô hình phát triển thân thiện với môi trường bằng cách sử dụng nguyên liệu tái chế và áp dụng công nghệ sản xuất tiết kiệm năng lượng. Chúng tôi cũng tổ chức nhiều chương trình xã hội để lan tỏa giá trị tốt đẹp đến cộng đồng.</p>
+         <h2 style="font-size: 24px; font-weight: bold; color: #333; border-left: 4px solid #ff7043; padding-left: 10px; margin-bottom: 20px;">Phát Triển Bền Vững</h2>
+         <p style="font-size: 16px; color: #555;">Ritz hướng đến mô hình phát triển thân thiện với môi trường bằng cách sử dụng nguyên liệu tái chế và áp dụng công nghệ sản xuất tiết kiệm năng lượng. Chúng tôi cũng tổ chức nhiều chương trình xã hội để lan tỏa giá trị tốt đẹp đến cộng đồng.</p>
        </section>
        <div style="text-align: center; margin-top: 40px;">
-         <p style="font-size: 16px; color: #ffffff;">Cảm ơn bạn đã đồng hành cùng chúng tôi! Hãy tạo phong cách riêng cùng Ritz ngay hôm nay.</p>
+         <p style="font-size: 16px; color: #555;">Cảm ơn bạn đã đồng hành cùng chúng tôi! Hãy tạo phong cách riêng cùng Ritz ngay hôm nay.</p>
        </div>
      </div>', 
  NULL, 
